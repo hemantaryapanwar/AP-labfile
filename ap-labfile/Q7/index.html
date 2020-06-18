@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <script>
+            
+            function Divisibleby5()
+            {
+                
+                var no = document.querySelector('.num').value;
+                if(no%5==0)
+                    {
+                        document.write('<h1 align = "center" color="green">Number is Divisible by 5</h1>');
+                    }
+                else
+                    {
+                        document.write('<h1 align = "center">Number is not Divisible by 5</h1>');
+                    }
+            }
+        
+        </script>
+    </head>
+<body bgcolor="orange">
+    
+    
+    
+    <h3>Divisible by 5</h3>
+    <form>
+        
+    <label for="no">Enter Number: </label>
+    <input type="number" id="no" name="no" class="num" placeholder="5"><br><br>
+
+
+    <input type="submit" value="submit" onclick="Divisibleby5()">
+    </form>
+    
+    
+    
+    
+    
+    
+    
+</body>
+
+
+
+</html>

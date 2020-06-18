@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            project 1
+        </title>
+        <link rel="icon" type="image/x-icon" href="C:\Users\HP\Downloads\icon.png">
+
+    </head>
+    <body bgcolor="#eee">
+        <style>
+            *{
+                font-style: italic;
+                font-family: cursive;
+            }
+            form{
+                /* border: 1px solid black; */
+                padding: 20px;
+                width: 70%;
+                text-align: left;
+            
+                /* border-top: 5px solid blue; */
+            }
+            label{
+                background-color: #ccc;
+            }
+            .n{
+                background-color: #eee;
+            }
+            
+        </style>
+        
+        
+        <center>
+            <br><br>
+            <!-- <div style=" width: 70%; background-color: aqua; text-align: center;">Photo-details</div> -->
+            <form name="photo" id="photo" method="POST" action="http://localhost/test.php">
+                <fieldset>
+                    <legend style="width: fit-content; background-color: aqua;">
+                        Photo-details</legend>
+                    
+                    <label for="title">Title</label><br>
+                    <input type="text" name="title" size="80" class="required"><br><br>
+                    <label for="des">Description </label><br>
+                    <textarea name="des" rows="5" cols="90" maxlength="100" class="required"></textarea><br><br>
+                    
+                    
+                    <label for="cont">Continent</label><br>
+                    <select name="cont">
+                        <option value="asia">Asia</option>
+                        <option value="eur">Europe</option>
+                        <option value="NA">North America</option>
+                        <option value="SA">South America</option>
+                        <option value="africa">Africa</option>
+                        <option value="aus">Austrailia</option>
+                    </select><div style="width: 30%; border: 1px solid #777; float: right;">
+                        <label for="copyright">Copyright?</label><br>
+                        <input type="radio" name="copyright" value="arr">
+                    <label for="arr" class="n">All rights reserved</label><br>
+                    <input type="radio" name="copyright" value="cc">
+                    <label for="cc" class="n">Creative Commons</label>
+                    </div><br>
+                    <label for="con">Country</label><br>
+                    <select name="con">
+                        <option value="ind">India</option>
+                        <option value="fra">France</option>
+                        <option value="usa">USA</option>
+                        <option value="chile">Chile</option>
+                        <option value="kenya">Kenya</option>
+                        <option value="nz">New Zealand</option>
+                    </select><br>
+                    <label for="city">City</label><br>
+                    <input type="text" name="city" >
+                
+                    <div style="width: 30%; border: 1px solid #777; float: right;">
+                        <label for="cc type">Creative Commons Types</label><br>
+                        <input type="checkbox" name="cc type" value="atr">
+                    <label for="atr" class="n">Attribution</label><br>
+                    <input type="checkbox" name="cc type" value="nc">
+                    <label for="nc" class="n">Non Commercial</label><br>
+                    <input type="checkbox" name="cc type" value="ndw">
+                    <label for="ndw" class="n">No derivative works</label><br>
+                    <input type="checkbox" name="cc type" value="share">
+                    <label for="share" class="n">Share alike</label>
+                    </div><br><br><br><br><br><br>
+                    <div style="background-color: cyan;">I accept the software license
+                        <input type="checkbox" name="sof-li" class="required">
+                    </div><br>
+                    <label for="no">Rate this photo:</label><br>
+                    <input type="number" min="1" max="5" name="no">
+                    <div style="width: 30%; border: 1px solid #777; float: right;">
+                        <label for="date">Date taken:</label><br>
+                        <input type="date" name="date" ><br><br>
+                        <label for="time">Time taken</label><br>
+                        <input type="time" name="time" >
+                    </div><br>
+                    <label for="color">Color collection:</label><br>
+                    <input type="color" name="color"><br><br><br><br>
+                    <div style="background-color: aqua; text-align: center;">
+                        <input type="submit">
+                        <input type="reset" value="clear">
+                    </div>
+                    </fieldset>
+                
+    
+            </form>
+        </center>
+        <script src="project.js"></script>
+
+    </body>
+</html>
